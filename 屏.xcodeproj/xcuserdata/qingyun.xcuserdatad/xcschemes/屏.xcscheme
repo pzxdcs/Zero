@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCC18DB61C1582F600977208"
-               BuildableName = "&#x5c4f;.app"
+               BuildableName = "&#xa0;&#x804a;&#x5929;&#x673a;&#x5668;&#x4eba;&#x96f6;.app"
                BlueprintName = "&#x5c4f;"
                ReferencedContainer = "container:&#x5c4f;.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCC18DB61C1582F600977208"
-            BuildableName = "&#x5c4f;.app"
+            BuildableName = "&#xa0;&#x804a;&#x5929;&#x673a;&#x5668;&#x4eba;&#x96f6;.app"
             BlueprintName = "&#x5c4f;"
             ReferencedContainer = "container:&#x5c4f;.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCC18DB61C1582F600977208"
-            BuildableName = "&#x5c4f;.app"
+            BuildableName = "&#xa0;&#x804a;&#x5929;&#x673a;&#x5668;&#x4eba;&#x96f6;.app"
             BlueprintName = "&#x5c4f;"
             ReferencedContainer = "container:&#x5c4f;.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCC18DB61C1582F600977208"
-            BuildableName = "&#x5c4f;.app"
+            BuildableName = "&#xa0;&#x804a;&#x5929;&#x673a;&#x5668;&#x4eba;&#x96f6;.app"
             BlueprintName = "&#x5c4f;"
             ReferencedContainer = "container:&#x5c4f;.xcodeproj">
          </BuildableReference>
@@ -106,6 +106,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "&#x804a;&#x5929;&#x673a;&#x5668;&#x4eba;&#x96f6;"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

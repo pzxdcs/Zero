@@ -51,7 +51,7 @@
 		CC86C3A91C167433005EBB06 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		CC86C3AB1C1675B4005EBB06 /* ChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
 		CC86C3AC1C1675B4005EBB06 /* ChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
-		CCC18DB71C1582F600977208 /* 屏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "屏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC18DB71C1582F600977208 /*  聊天机器人零.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " 聊天机器人零.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC18DBB1C1582F600977208 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCC18DBD1C1582F600977208 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCC18DBE1C1582F600977208 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		CCC18DB81C1582F600977208 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCC18DB71C1582F600977208 /* 屏.app */,
+				CCC18DB71C1582F600977208 /*  聊天机器人零.app */,
 				CCC18DD01C1582F600977208 /* 屏Tests.xctest */,
 				CCC18DDB1C1582F600977208 /* 屏UITests.xctest */,
 			);
@@ -256,7 +256,7 @@
 			);
 			name = "屏";
 			productName = "屏";
-			productReference = CCC18DB71C1582F600977208 /* 屏.app */;
+			productReference = CCC18DB71C1582F600977208 /*  聊天机器人零.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CCC18DCF1C1582F600977208 /* 屏Tests */ = {
@@ -523,10 +523,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Henan Qingyun Information Technology Co., Ltd. (LSRRXAH5MP)";
 				INFOPLIST_FILE = "屏/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zxc.zxc.-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qingyun.1507;
+				PRODUCT_NAME = " 聊天机器人零";
+				PROVISIONING_PROFILE = "9557906c-99c4-4bdb-be4a-860ce24e7dd2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -534,10 +538,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Henan Qingyun Information Technology Co., Ltd. (LSRRXAH5MP)";
 				INFOPLIST_FILE = "屏/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zxc.zxc.-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qingyun.1507;
+				PRODUCT_NAME = " 聊天机器人零";
+				PROVISIONING_PROFILE = "9557906c-99c4-4bdb-be4a-860ce24e7dd2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

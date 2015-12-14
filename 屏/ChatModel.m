@@ -12,6 +12,7 @@
 - (instancetype)initWithDic:(NSDictionary *)dic{
     self = [super init];
     self.text = dic[@"text"];
+ 
    
     return self;
 }

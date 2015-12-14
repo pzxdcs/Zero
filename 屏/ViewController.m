@@ -45,13 +45,11 @@
     [self.view addGestureRecognizer:tapGestureRecognizer];
 
 }
-
 -(void)loadData{
     NSString *str = self.textF.text;
     NSDictionary *params = @{@"key":@"291f634eb9ab6904c75814d86fe2222a",@"info":str};
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:kBaseUrl parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-    
         NSMutableArray *resultArr = [NSMutableArray arrayWithArray:self.data];
         ChatModel *model = [[ChatModel alloc]initWithDic:responseObject];
         [resultArr addObject:model];
@@ -114,18 +112,27 @@
 
    if (cell.type == kChatTo) {
        cell.iconLayout.constant = [UIScreen mainScreen].bounds.size.width - 10 -45;
-       cell.contentLayout.constant = -self.wight-55;
+       cell.contentLayout.constant = -self.wight-70;
        cell.contentHight.constant = self.height;
        cell.contentWigth.constant = self.wight;
+       cell.backGroundLayout.constant = -self.wight - 85;
+       cell.backGroundHeight.constant = self.height + 20;
+       cell.backGroundWigth.constant = self.wight + 40;
        UIImage *image = [UIImage imageNamed:@"chatto_bg_normal"];
-       [image stretchableImageWithLeftCapWidth:image.size.width*0.5 topCapHeight:image.size.height*0.5];
-       
+       image =[image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.7];
+       cell.backGroundImage.image = image;
     
    }else{
        cell.iconLayout.constant = 10;
-       cell.contentLayout.constant = 8;
+       cell.contentLayout.constant = 30;
+       cell.backGroundLayout.constant = 5;
+       cell.backGroundHeight.constant = self.height + 20;
+       cell.backGroundWigth.constant = self.wight + 40;
        cell.contentWigth.constant = self.wight;
        cell.contentHight.constant = self.height;
+       UIImage *image = [UIImage imageNamed:@"chatfrom_bg_normal"];
+       image = [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.7];
+       cell.backGroundImage.image = image;
    }
     self.textF.text = @"";
     return cell;
@@ -141,13 +148,13 @@
         self.str = model.text;
     }
 
-    CGSize size = [self.str boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width-63, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f]} context:nil].size;
+    CGSize size = [self.str boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width-120, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0f]} context:nil].size;
     self.wight = size.width;
     self.height = size.height;
-    if (_height>50) {
-        return _height + 22;
+    if (_height>30) {
+        return _height + 40;
     }else{
-        return 50;
+        return 70;
     }
     
 }

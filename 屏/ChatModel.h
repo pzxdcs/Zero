@@ -15,5 +15,6 @@ typedef enum {
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) NSString *textTo;
 
+
 -(instancetype)initWithDic:(NSDictionary *)dic;
 @end
